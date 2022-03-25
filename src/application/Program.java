@@ -19,6 +19,8 @@ public class Program extends Application {
 		try {
 			Parent parent = FXMLLoader.load(getClass().getResource("/gui/View.fxml"));
 			Scene scene = new Scene(parent);
+			stage.setTitle("Calculadora de juros");
+			stage.setResizable(false);
 			stage.setScene(scene);
 			stage.show();
 		} catch (IOException e) {
